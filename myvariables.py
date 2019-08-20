@@ -1,0 +1,141 @@
+#Data Variables
+username = "Administrator"
+password = "Administrator"
+invalid_text = "blahblahblah"
+device_dim1= "dimmableLight0"
+device_dim2= "dimmableLight1"
+device_ext1= "extendedColorLight0"
+device_ext2= "extendedColorLight1"
+
+#+++++++++Common Locators++++++++++++++++++++++++++++++++++++++++++++++
+loc_user_menu = "css=div#avatar"
+#loc_user_dropdown = "css=#user-dropdown"
+loc_user_dropdown ="//span[@class='nav-link user-link']"
+loc_logout = "//span[@class='text-logout']"
+loc_change_password = "//span[@class='text-change-password']"
+loc_carousel = "css:.slide-message"
+loc_carousel_close = "//soti-icon-close[@class='sc-icon-center soti-svg-icon small']"
+loc_common_ok_btn = "//button[contains(text(),'OK')]"
+loc_primary_btn = "//button[@class='primary']"
+loc_column_dropdown = "//span[contains(@class,'column-selector-icon')]"
+loc_left_selectall_checkbox = "//span[contains(@class,'left-toggle')]"
+loc_right_unselectall_checkbox = "//span[contains(@class,'right-toggle')]"
+loc_background1 = "//div[contains(@class,'dropdown-background')]"
+loc_background2 = "//div[@class='cdk-overlay-backdrop transparent cdk-overlay-backdrop-showing']"
+
+# Left navigation panel
+loc_hamburger_menu = "css=.hamburger-box"
+loc_ham_devices = "//soti-dropdown-node[contains(text(),'Devices')]"
+loc_ham_rules = "//soti-dropdown-node[contains(text(),'Rules')]"
+loc_ham_reports = "//soti-dropdown-node[contains(text(),'Reports')]"
+loc_ham_protocols = "//soti-dropdown-node[contains(text(),'Protocols')]"
+loc_ham_user_security = "//soti-dropdown-node[contains(text(),'Security')]"
+loc_ham_alerts = "//soti-dropdown-node[contains(text(),'Alerts')]"
+loc_ham_global_settings = "//soti-dropdown-node[contains(text(),'Settings')]"
+loc_ham_administration = "//soti-dropdown-node[contains(text(),'Administration')]"
+loc_ham_help = "//a[contains(text(),'Help')]"
+loc_ham_about = "//a[contains(text(),'About Connect')]"
+
+
+#Login Page Locators
+loc_username = "//input[@placeholder='Username']"
+loc_password = "//input[@placeholder='Password']"
+loc_login_btn = "primary"
+loc_login_error = "//p[@class='form-error']"
+
+#Protocols Page Locators
+loc_philips_host = "css=#Host Address"
+loc_protocols_table = "//div[@class='table-content-rows']//soti-row"
+loc_pg_rename= "//input[@id='Protocol Gateway Name']"
+loc_instance_rename= "//input[@id='Protocol Instance Name']"
+loc_instance_3dots_button= "//span[@class='instance-actions ng-star-inserted']//span[@class='more-actions-button']"
+
+#User Security Page Locators
+loc_users_table = "css:soti-row.soti-row.ng-star-inserted"
+loc_new_user = "//div[@class='add-button ng-star-inserted']"
+loc_user_actionbar_rename = "//i[@class='ngui-icon-rename sc-action-button sc-action-button-large']"
+loc_user_actionbar_password = "//i[@class='ngui-icon-password sc-action-button sc-action-button-large']"
+loc_user_actionbar_delete = "//i[@class='ngui-icon-delete sc-action-button sc-action-button-large']"
+
+
+#Global Settings Page Locators
+#----------General Settings----------
+loc_db_configuration = "//soti-expansion-panel[@id='databasePanel']"
+loc_products_configuration = "//soti-expansion-panel[@id='oneConfigPanel']"
+loc_dc_warning = "//input[@id='historical-data-warning-limit']"
+loc_dc_maxsize = "//input[@id='historical-data-maximum-size']"
+loc_dc_error_msg = "//div[@class='error-message-text collection-error-message']"
+loc_lc_warning = "//input[@id='logging-warning-limit']"
+loc_lc_maxsize = "//input[@id='logging-maximum-size']"
+loc_general_settings_apply = "//div[@class='btn-apply text']"
+loc_lc_error_msg = "//div[contains(text(),'warning limit')]"
+
+#Devices Page Locators
+loc_device_page="//span[@class='item-description']"
+loc_device_search_dropdown="//div[@class='attribute-selection-wrapper']//span[@class='arrow']"
+loc_device_search_textbox="//form[@class='input-group ng-untouched ng-pristine ng-valid']//input[@placeholder='Search']"
+loc_device_search_button="//button[@class='btn-search']"
+loc_device_grid="//div[@id='device-grid']"
+count="0"
+loc_url_devicepage="//https://ril-nightly.sotidev.com/Connect/#/devices"
+loc_device_detailspageheader="//div[@class='header-container']"
+loc_devicepane_renamebutton="//div[@class='overview-header']//div[2]//soti-tooltip[1]//div[1]//span[1]"
+loc_devicepane_setflag="//div[@class='overview-header']//div[5]"
+loc_devicerename_okbutton="//button[contains(text(),'OK')]"
+loc_devicerename_descriptiontextbox="//input[@id='Description']"
+loc_devicepane_closebutton="//div[@class='select-button close']"
+loc_devicedetails_search="//span[@class='form-data-wrapper']//input[@placeholder='Search']"
+element="a"
+RANDOMGP="group"
+loc_threepoint_button_leftpanel="//div[@class='view-all active']//div[contains(@class,'group-actions')]//*[@class='soti-icon__svg']"
+loc_deviceinfostatus="//div[@class='device-info-status']"
+loc_multiselect_checkbox="//soti-header-cell[@class='checkbox-column soti-header-cell cdk-column-selection_checkbox soti-column-selection_checkbox ng-star-inserted']//*[@class='soti-icon__svg']"
+loc_dpanel_3dots_button = "//i[@class='ngui-icon-moreitem sc-action-button sc-action-button-large']"
+loc_dpanel_checkin_button = "//i[@class='ngui-icon-checkin sc-action-button sc-action-button-large']"
+loc_dpanel_setflag_button = "//i[@class='ngui-icon-circle sc-action-button sc-action-button-large']"
+loc_dpanel_delete_button = "//i[@class='ngui-icon-delete sc-action-button sc-action-button-large']"
+
+#Reports Page Locators
+loc_reports_quick_report="//div[@class='default-item ng-star-inserted']"
+loc_reports_device_search_button="//button[@class='button-search']"
+loc_reports_save_button="//button[@class='primary']"
+loc_reports_saveas="//soti-dropdown-node[@class='ng-star-inserted']"
+loc_reports_saveas_confirm= "//button[contains(text(),'Confirm')]"
+loc_reports_saveas_input= "//input[@id='input-modal']"
+loc_reports_threedots="//sc-action-dropdown-button[@class='shift']//span[@class='more-actions-button']"
+loc_reports_searchdevices ="//input[@placeholder='Search']"
+loc_reports_save="//body//soti-dropdown-node[2]"
+loc_reports_rename= "//body//soti-dropdown-node[1]"
+loc_reports_delete= "//body//soti-dropdown-node[2]"
+loc_reports_moreoption="//div[@class='selection-item active ng-star-inserted']//sc-action-dropdown-button[@class='action-button ng-star-inserted']"
+loc_reports_table="//div[@class='selection-menu']"
+loc_reports_exporttocsv="//i[@class='ngui-icon-export sc-action-button sc-action-button-regular']"
+
+#Rules page locators
+loc_rules_next_buttom="//button[@class='primary'][contains(text(),'Next')]"
+loc_rules_next_button1="(//button[@class='primary'][contains(text(),'Next')])[1]"
+loc_rules_next_button2="(//button[@class='primary'][contains(text(),'Next')])[2]"
+loc_rules_add_button="//soti-icon-addnew[@class='button-icon sc-icon-center sc-rule-add-button soti-svg-icon large']"
+loc_reports_THEN_add="//div[contains(@class,'then-header')]//div[contains(@class,'add-button ng-star-inserted')]//*[contains(@class,'soti-icon__svg')]"
+loc_reports_IF_add="//div[contains(@class,'if-header')]//soti-icon-addnew[contains(@class,'button-icon sc-icon-center sc-rule-add-button soti-svg-icon large')]"
+loc_rules_add="//button[contains(text(),'Add')]"
+loc_rules_search="//input[@placeholder='Search']"
+loc_rules_devicetype="//i[@class='ngui-icons_device_filter ng-star-inserted']"
+loc_new_rule_button= "//label[@class='button-label title']"
+
+# Administration Page Locators
+loc_system_mgmt_tab= "//li[1]//a[1]//div[1]"
+loc_device_type_def_tab= "//li[2]//a[1]//div[1]"
+loc_logs_tab= "//li[3]//a[1]//div[1]"
+loc_log_type_fatal = "(//div[@class='checkbox-wrapper'])[4]"
+loc_register_host_address= "//input[@id='Host Address']"
+
+
+# About Page Locators
+loc_about_version= "//div[contains(text(),'Version:')]"
+loc_about_build_date= "//div[contains(text(),'Build Date:')]"
+loc_about_license_text= "//div[contains(text(),'License expires')]"
+loc_license_input="//input[@id='regcode']"
+loc_about_close= "//soti-icon-close[@class='sc-icon-center soti-svg-icon']"
+loc_about_update= "//button[contains(@class,'primary-button update-button')]"
+loc_about_commit= "//button[contains(text(),'Commit')]"
